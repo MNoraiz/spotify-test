@@ -39,7 +39,7 @@ public class SignUpPage {
         WebElement dobNextButton = driver.findElement(By.id("com.spotify.music:id/emailNext"));
         dobNextButton.click();
 
-        WebElement genderButton = driver.findElement(By.xpath("//android.widget.RadioButton[@text='Male']"));
+        WebElement genderButton = driver.findElement(By.id("com.spotify.music:id/male"));
         genderButton.click();
 
         WebElement createAccountButton = driver.findElement(By.id("com.spotify.music:id/createAccount"));

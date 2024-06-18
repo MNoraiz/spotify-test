@@ -11,14 +11,17 @@ public class Main {
 
     public static void main(String[] args) throws MalformedURLException {
         connection();
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.login();
+
+        SignUpPage signUpPage = new SignUpPage(driver);
+        signUpPage.signUp();
 
         LogoutPage logoutPage = new LogoutPage(driver);
         logoutPage.logout();
 
-        SignUpPage signUpPage = new SignUpPage(driver);
-        signUpPage.signUp();
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.login();
+
+
     }
 
     public static void connection() throws MalformedURLException {
