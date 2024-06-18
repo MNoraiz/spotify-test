@@ -18,9 +18,10 @@ public class Main {
         LogoutPage logoutPage = new LogoutPage(driver);
         logoutPage.logout();
 
+        terminateApp();
+
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login();
-
 
     }
 
@@ -37,4 +38,11 @@ public class Main {
         URL url = new URL("http://127.0.0.1:4723/wd/hub");
         driver = new AndroidDriver(url, options);
     }
+
+    public static void terminateApp() {
+        if (driver != null) {
+            driver.terminateApp("com.spotify.music");
+        }
+    }
+
 }
