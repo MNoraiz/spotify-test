@@ -18,7 +18,7 @@ public class LoginPage {
         emailField.sendKeys("noraiz.trax@gmail.com");
         WebElement passwordField = driver.findElement(By.id("com.spotify.music:id/password"));
         passwordField.sendKeys("junoon100$$");
-        WebElement next = driver.findElement(By.id("com.spotify.music:id/next"));
-        next.click();
+        WebElement next_btn = driver.findElement(By.id("com.spotify.music:id/next"));
+        next_btn.click();
     }
 }

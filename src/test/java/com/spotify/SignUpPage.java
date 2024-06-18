@@ -12,20 +12,20 @@ public class SignUpPage {
     }
 
     public void signUp() {
-        WebElement signUpButton = driver.findElement(By.id("com.spotify.music:id/SignUp"));
-        signUpButton.click();
+        WebElement signUp_btn = driver.findElement(By.id("com.spotify.music:id/SignUp"));
+        signUp_btn.click();
 
         WebElement emailField = driver.findElement(By.id("com.spotify.music:id/email"));
         emailField.sendKeys("testemail@email.com");
 
-        WebElement emailNextButton = driver.findElement(By.id("com.spotify.music:id/emailNext"));
-        emailNextButton.click();
+        WebElement emailNext_btn = driver.findElement(By.id("com.spotify.music:id/emailNext"));
+        emailNext_btn.click();
 
         WebElement passwordField = driver.findElement(By.id("com.spotify.music:id/password"));
         passwordField.sendKeys("123456789abc@");
 
-        WebElement passwordNextButton = driver.findElement(By.id("com.spotify.music:id/emailNext"));
-        passwordNextButton.click();
+        WebElement passwordNext_btn = driver.findElement(By.id("com.spotify.music:id/emailNext"));
+        passwordNext_btn.click();
 
         WebElement monthPicker = driver.findElement(By.id("com.spotify.music:id/monthPicker"));
         monthPicker.sendKeys("Mar");
@@ -36,13 +36,13 @@ public class SignUpPage {
         WebElement yearPicker = driver.findElement(By.id("com.spotify.music:id/yearPicker"));
         yearPicker.sendKeys("1997");
 
-        WebElement dobNextButton = driver.findElement(By.id("com.spotify.music:id/emailNext"));
-        dobNextButton.click();
+        WebElement dobNext_btn = driver.findElement(By.id("com.spotify.music:id/emailNext"));
+        dobNext_btn.click();
 
-        WebElement genderButton = driver.findElement(By.id("com.spotify.music:id/male"));
-        genderButton.click();
+        WebElement gender_btn = driver.findElement(By.id("com.spotify.music:id/male"));
+        gender_btn.click();
 
-        WebElement createAccountButton = driver.findElement(By.id("com.spotify.music:id/createAccount"));
-        createAccountButton.click();
+        WebElement createAccount_btn = driver.findElement(By.id("com.spotify.music:id/createAccount"));
+        createAccount_btn.click();
     }
 }
