@@ -18,7 +18,8 @@ public class Main {
         LogoutPage logoutPage = new LogoutPage(driver);
         logoutPage.logout();
 
-        terminateApp();
+
+        terminate();
 
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login();
@@ -39,7 +40,7 @@ public class Main {
         driver = new AndroidDriver(url, options);
     }
 
-    public static void terminateApp() {
+    public static void terminate() {
         if (driver != null) {
             driver.terminateApp("com.spotify.music");
         }
